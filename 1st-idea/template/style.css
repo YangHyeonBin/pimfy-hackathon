@@ -1,0 +1,38 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* 모바일 */
+
+body {
+  background-color: #FFF2D0;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+.header {
+  display: flex;
+  justify-content: center;
+  background-color: #16d48f;
+}
+
+.logo {
+  font-family: 'Dongle', sans-serif;
+  font-size: 2rem;
+  padding: 0.2em;
+  color: #2a6376;
+}
+
+/* 태블릿 */
+@media screen and (min-width: 48em) {
+  .logo {
+    font-size: 3rem;
+  }
+}
+
+/* PC */
+@media screen and (min-width: 64em) {
+}

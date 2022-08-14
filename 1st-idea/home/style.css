@@ -1,0 +1,113 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* 모바일 */
+
+body {
+  background-color: #FFF2D0;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+.header {
+  display: flex;
+  justify-content: center;
+  background-color: #16d48f;
+}
+
+.logo {
+  font-family: 'Dongle', sans-serif;
+  font-size: 2rem;
+  padding: 0.2em;
+  color: #2a6376;
+}
+
+.main {
+  position: relative;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.char {
+  width: 40vw;
+  margin-bottom: 1em;
+}
+
+.desc {
+  font-family: 'Dongle', sans-serif;
+  font-size: 1.8rem;
+  margin-bottom: 2em;
+  text-align: center;
+}
+
+.arrow {
+  display: block;
+  width: 20%;
+}
+
+.pencil {
+  background: none;
+  padding: 0.3em;
+  background-color: #ffed63;
+  border-radius: 50%;
+  border: none;
+  font-size: 2.5rem;
+  position: absolute;
+  bottom: 0.5em;
+  right: 0.5em;
+  cursor: pointer;
+}
+
+.pencil:hover {
+  background-color: #fce747;
+}
+
+/* 태블릿 */
+@media screen and (min-width: 48em) {
+  .logo {
+    font-size: 3rem;
+  }
+
+  .desc {
+    font-size: 3rem;
+  }
+
+  .pencil {
+    font-size: 3rem;
+  }
+}
+
+/* PC */
+@media screen and (min-width: 64em) {
+  .char {
+    width: 15rem;
+  }
+
+  .desc {
+    margin: 0;
+  }
+
+  .arrow {
+    width: 10%;
+    position: absolute;
+    top: 0;
+    right: 2em;
+    transform: rotate(-90deg);
+  }
+
+  .pencil {
+    position: fixed;
+    top: 0.3rem;
+    bottom: auto;
+    right: 1rem;
+    font-size: 2.5rem;
+    background-color: #33de9f;
+  }
+}

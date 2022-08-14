@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>추가하기</title>
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Dongle:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <script defer src="./app.js"></script>
+  </head>
+  <body>
+    <header class="header">
+      <h1 class="logo">집돌이의 외출 루틴</h1>
+    </header>
+    <main class="main">
+      <form class="search">
+        <div class="input-container">
+          <div class="input">
+            <img src="../src/출발.png" alt="출발 아이콘" class="icon" />
+            <div class="input-box first">
+              <input type="text" placeholder="출발지를 입력하세요." />
+            </div>
+          </div>
+          <div class="input">
+            <img src="../src/경유지.png" alt="경유 아이콘" class="icon" />
+            <div class="input-box">
+              <input type="text" placeholder="경유지를 입력하세요." />
+              <button class="plus-minus">-</button>
+            </div>
+          </div>
+          <div class="input">
+            <img src="../src/도착.png" alt="도착 아이콘" class="icon" />
+            <div class="input-box last">
+              <input type="text" placeholder="목적지를 입력하세요." />
+              <button class="plus-minus">+</button>
+            </div>
+          </div>
+        </div>
+        <!-- <input type="text" /> -->
+        <button class="search-button" type="button">🔍</button>
+      </form>
+      <div class="output">
+        <div class="route-container">
+          <span class="marker"><span>출발지</span> → <span>경유지</span></span>
+          <div class="route">
+            <h2>1003번 버스</h2>
+            <span>1시간 13분</span>
+            <p>미포.문탠로드입구</p>
+            <p>남포동 정류장</p>
+          </div>
+          <div class="route">
+            <h2>지하철 1호선</h2>
+            <span>1시간</span>
+            <p>남포역</p>
+            <p>중동역</p>
+          </div>
+        </div>
+        <div class="route-container">
+          <span class="marker"><span>경유지</span> → <span>도착지</span></span>
+          <div class="route">
+            <h2>1004번 버스</h2>
+            <span>2시간 13분</span>
+            <p>미포.문탠로드입구</p>
+            <p>남포동 정류장</p>
+          </div>
+          <div class="route">
+            <h2>지하철 9호선</h2>
+            <span>1시간</span>
+            <p>남포역</p>
+            <p>중동역</p>
+          </div>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>

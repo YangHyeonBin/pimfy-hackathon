@@ -1,0 +1,211 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* 모바일 */
+
+.header {
+  background-color: rgb(219, 237, 253);
+}
+
+.logo {
+  font-family: 'Gowun Batang', serif;
+  font-size: 1.3rem;
+  padding: 0.5em;
+  color: #0a465b;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+a {
+  text-decoration: none;
+  color: #0a465b;
+}
+
+.list-header {
+  display: flex;
+  justify-content: space-between;
+  padding: 1em;
+  align-items: center;
+  border-bottom: 1px solid #084c8deb;
+}
+
+.place {
+  font-family: 'Gowun Batang', serif;
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #084c8deb;
+}
+
+.search {
+  display: flex;
+  background-color: #fff;
+  border: 1px solid #084c8deb;
+  border-radius: 8px;
+  padding: 0.3em;
+}
+
+input {
+  border: none;
+  background-color: transparent;
+  border-right: 1px solid #084c8deb;
+  margin-right: .5em;
+  outline: none;
+}
+
+.lense {
+  display: block;
+  width: 1.5em;
+  cursor: pointer;
+}
+
+.list-container {
+  list-style-type: none;
+}
+
+.list-item {
+  padding: 1em;
+  border-bottom: 0.2px solid #5694cdeb;
+  cursor: pointer;
+  color: #084c8deb;
+}
+
+/* 모달 */
+.modal {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.modal-overlay {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.modal-contents {
+  position: absolute;
+  background-color: aliceblue;
+  box-shadow: rgba(0, 0, 0, 0.2) 4px 7px 30px 0px;
+  border-radius: 4px;
+  padding: 1.8em 1em 1em;
+}
+
+.modal-contents {
+  font-family: 'Gowun Batang', serif;
+}
+
+.item-name {
+  color: #012b52eb;
+  margin-bottom: 0.5em;
+}
+
+.item-desc {
+  color: #001d38eb;
+}
+
+.item-desc button {
+  font-family: inherit;
+  border: 1px solid #084c8deb;
+  background-color: aliceblue;
+  color: #084c8deb;
+  padding: 0.3em 0.5em;
+  margin-top: 0.5em;
+  font-size: 0.9rem;
+  cursor: pointer;
+}
+
+.item-desc button:hover {
+  background-color: rgb(203, 230, 253);
+}
+
+.modal-contents img {
+  display: block;
+  width: 100%;
+  margin-bottom: 0.5em;
+}
+
+.close {
+  border: none;
+  font-size: 1.2rem;
+  background-color: transparent;
+  position: absolute;
+  top: .3em;
+  right: .7em;
+  cursor: pointer;
+}
+
+.hidden {
+  display: none;
+}
+
+a {
+  text-decoration: none;
+  color: #084c8deb;
+}
+
+/* 태블릿 */
+@media screen and (min-width: 48em) {
+  .logo {
+    font-size: 2rem;
+  }
+  
+  .list-item {
+    padding: 1.3em;
+  }
+}
+
+/* PC */
+@media screen and (min-width: 64em) {
+  .contents {
+    display: flex;
+  }
+
+  .modal {
+    display: block;
+    position: static;
+    flex: 1;
+  }
+
+  main {
+    flex: 1;
+  }
+
+  .modal-overlay {
+    display: none;
+  }
+
+  .modal-contents {
+    position: static;
+    background-color: transparent;
+    box-shadow: none;
+    border-left: 1.5px solid #084c8deb;
+    border-radius: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .modal-contents img {
+    width: 80%;
+  }
+
+  .item-desc {
+    text-align: center;
+  }
+
+  .close {
+    display: none;
+  }
+}

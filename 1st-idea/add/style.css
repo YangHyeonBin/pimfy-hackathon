@@ -1,0 +1,209 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* 모바일 */
+
+body {
+  background-color: #FFF2D0;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+.header {
+  display: flex;
+  justify-content: center;
+  background-color: #16d48f;
+}
+
+.logo {
+  font-family: 'Dongle', sans-serif;
+  font-size: 2rem;
+  padding: 0.2em;
+  color: #2a6376;
+}
+
+.search {
+  display: flex;
+  justify-content: space-between;
+  margin: 1.5em 1em;
+  position: relative;
+}
+
+.input-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.input-box {
+  display: flex;
+  align-items: center;
+  background-color: #fff;
+  padding: 0.8em 1.2em;
+  border: 1px solid rgb(196, 196, 196);
+  position: relative;
+}
+
+.input-box.first {
+  border-radius: 10px 10px 0 0;
+}
+
+.input-box.last {
+  border-radius: 0 0 10px 10px;
+}
+
+.input {
+  display: flex;
+  align-items: center;
+}
+
+/* 검색창 그 자체 */
+input {
+  border: none;
+  outline: none;
+  padding-right: 2.8em;
+}
+
+input::placeholder {
+  color: rgb(196, 196, 196);
+}
+
+.icon {
+  width: 1rem;
+  margin-right: 1em;
+}
+
+/* .icon:before {
+  position: absolute;
+  top: 11px;
+  bottom: 12px;
+  left: 4px;
+  width: 2px;
+  background: url('https://t1.daumcdn.net/localimg/localimages/07/2018/pc/favorite/bg_route.png') repeat-y 0 -2px;
+  content: '';
+} */
+
+.plus-minus {
+  background-color: #f4f4f4;
+  border: 2px solid rgb(196, 196, 196);
+  color: rgb(196, 196, 196);
+  border-radius: 50%;
+  width: 1.3rem;
+  height: 1.3rem;
+  font-size: 1rem;
+  position: absolute;
+  top: 50;
+  right: 1em;
+  cursor: pointer;
+}
+
+.plus-minus:hover {
+  background-color: #eae9e9;
+}
+
+.search-button {
+  background-color: #fbe09d;
+  border: none;
+  font-size: 1.3rem;
+  height: 1.6em;
+  width: 2.5em;
+  border-radius: 4px;
+  position: absolute;
+  bottom: .2em;
+  right: 0;
+  cursor: pointer;
+}
+
+.search-button:hover {
+  background-color: #fcd77a;
+}
+
+.route-container {
+  margin: 0 1em 1em;
+}
+
+.marker {
+  background-color: #fbe09d;
+  border-radius: 8px 8px 0 0;
+  padding: 0.5em;
+  display: inline-block;
+}
+
+
+.route {
+  background-color: #fff;
+  padding: 0.8em;
+  border: 1px solid rgb(196, 196, 196);
+}
+
+.route:focus-within {
+  background-color: #c3f0ff;
+}
+
+.route h2 {
+  font-size: 1.3rem;
+  cursor: pointer;
+}
+
+.route span {
+  display: inline-block;
+  margin-bottom: 0.5em;
+}
+
+.route p {
+  font-size: 0.85rem;
+}
+
+/* 첫 번째 route */
+.route:nth-child(2) {
+  border-radius: 0 8px 0 0;
+}
+
+.route:last-child {
+  border-radius: 0 0 8px 8px;
+}
+
+/* JS로 구현 */
+.focus {
+  border-color: #16d48f;
+}
+
+
+/* 태블릿 */
+@media screen and (min-width: 48em) {
+  .logo {
+    font-size: 3rem;
+  }
+
+  .main {
+    margin: 0 5em;
+  }
+
+  .input-box input {
+    padding-right: 10em;
+  }
+
+  .search-button {
+    right: 3.5em;
+  }
+
+  .input-container {
+    margin-left: 3.5em;
+  }
+}
+
+/* PC */
+@media screen and (min-width: 64em) {
+  .input-box input {
+    padding-right: 25em;
+  }
+
+  .search-button {
+    right: 3em;
+    width: 5em;
+  }
+}

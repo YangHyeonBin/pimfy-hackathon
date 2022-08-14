@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Detail</title>
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Gowun+Batang&display=swap"
+      rel="stylesheet"
+    />
+    <script defer src="./app.js"></script>
+  </head>
+  <body>
+    <header class="header">
+      <h1 class="logo">
+        <a href="../home/index.html">"거기 지금 사람 많아요?"</a>
+      </h1>
+    </header>
+    <h2 class="item-name">광안리 해수욕장</h2>
+    <div class="item-desc">
+      <p>혼잡도: <span>보통</span></p>
+      <p>대기 시간: 약 <span>20분</span></p>
+    </div>
+    <div class="double">
+      <div class="img-container">
+        <img src="../assets/사진1.jpg" alt="학교" />
+        <img src="../assets/사진3.jpg" alt="하늘" />
+        <img src="../assets/사진4.jpg" alt="나무" />
+        <img src="../assets/사진5.jpg" alt="강" />
+      </div>
+      <div id="map" class="map" style="width: 500px; height: 400px">지도</div>
+    </div>
+  </body>
+  <!-- 카카오맵 api 이용해 #map 요소에 지도를 표시해주기 위한 script 코드 있었음, api 키 보안 문제로 인해 여기에선 제거함 -->
+</html>

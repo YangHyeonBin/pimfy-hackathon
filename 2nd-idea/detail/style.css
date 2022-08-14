@@ -1,0 +1,114 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* 모바일 */
+
+.header {
+  background-color: rgb(219, 237, 253);
+}
+
+.logo {
+  font-family: 'Gowun Batang', serif;
+  font-size: 1.3rem;
+  padding: 0.5em;
+  color: #0a465b;
+  font-weight: 500;
+  cursor: pointer;
+  margin-bottom: 0.5em;
+}
+
+a {
+  text-decoration: none;
+  color: #0a465b;
+}
+
+.item-name {
+  font-family: 'Gowun Batang', serif;
+  color: #012b52eb;
+  padding-left: 1rem;
+  padding-bottom: 0.5em;
+  border-bottom: 1px solid #084c8deb;
+  margin-bottom: 0.5em;
+}
+
+.item-desc {
+  font-family: 'Gowun Batang', serif;
+  color: #012b52eb;
+  padding-left: 1rem;
+  margin-bottom: 0.5em;
+}
+
+.img-container {
+  width: 90%;
+  margin: 0 auto;
+}
+
+img:first-child {
+  width: 68%;
+  height: 10em;
+}
+
+img:nth-child(2) {
+  width: 30%;
+  height: 10em;
+}
+
+img:nth-child(3) {
+  width: 30%;
+  height: 10em;
+}
+
+img:last-child {
+  width: 68%;
+  height: 10em;
+}
+
+img {
+  display: inline-block;
+}
+
+/* 실제 지도를 올릴 자리에 임시로 만들어 둔 박스 */
+.map {
+  display: block;
+  width: 90%;
+  margin: 0.5em auto 0;
+  background-color: greenyellow;
+}
+
+
+/* 태블릿 */
+@media screen and (min-width: 48em) {
+  .logo {
+    font-size: 2rem;
+    margin-bottom: 0.2em;
+  }
+}
+
+/* PC */
+@media screen and (min-width: 64em) {
+  .logo {
+    margin-bottom: 0.5em;
+  }
+
+  .double {
+    display: flex;
+    margin: 0 1rem;
+    align-items: flex-start;
+  }
+
+  .img-container {
+    margin-right: 0.5em;
+  }
+
+  .img-container img {
+    height: 15em;
+  }
+
+  .map {
+    margin: 0;
+    height: 21em;
+  }
+}

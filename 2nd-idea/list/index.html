@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>List</title>
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Gowun+Batang&display=swap"
+      rel="stylesheet"
+    />
+    <script defer src="./app.js"></script>
+  </head>
+  <body>
+    <header class="header">
+      <h1 class="logo">
+        <a href="../home/index.html">"거기 지금 사람 많아요?"</a>
+      </h1>
+    </header>
+    <div class="contents">
+      <main>
+        <header class="list-header">
+          <h2 class="place">부산</h2>
+          <div class="search">
+            <input type="text" />
+            <img src="../assets/lense.png" alt="검색 아이콘" class="lense" />
+          </div>
+        </header>
+        <ul class="list-container">
+          <li class="list-item">광안리 해수욕장</li>
+          <li class="list-item">동백섬</li>
+          <li class="list-item">보수동 책방 골목</li>
+          <li class="list-item">오륙도</li>
+          <li class="list-item">용두산 공원</li>
+          <li class="list-item">해운대 해수욕장</li>
+        </ul>
+      </main>
+      <div class="modal hidden">
+        <div class="modal-overlay"></div>
+        <div class="modal-contents">
+          <h3 class="item-name">광안리 해수욕장</h3>
+          <img src="../assets/광안리-지도.jpg" alt="광안리 지도" />
+          <div class="item-desc">
+            <p>혼잡도: <span>보통</span></p>
+            <p>대기 시간: 약 <span>20분</span></p>
+            <button type="button">
+              <a href="../detail/index.html">상세 보기</a>
+            </button>
+          </div>
+          <button type="button" class="close">x</button>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
