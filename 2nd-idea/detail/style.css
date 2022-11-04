@@ -78,7 +78,6 @@ img {
   background-color: greenyellow;
 }
 
-
 /* 태블릿 */
 @media screen and (min-width: 48em) {
   .logo {

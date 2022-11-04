@@ -6,6 +6,7 @@ const $modalOverlay = document.querySelector('.modal-overlay');
 function openModal() {
   $modal.classList.remove('hidden');
 }
+
 const closeModal = () => {
   $modal.classList.add('hidden');
 };
